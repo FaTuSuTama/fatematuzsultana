@@ -279,7 +279,7 @@ body em {
 }
 
 .workSection .workContainer .work .imgContaner a:hover {
-    transform: scale(1.1)
+    color: #000;
 }
 
 /* App section design */
