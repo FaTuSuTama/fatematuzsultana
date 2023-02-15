@@ -1,0 +1,599 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #252627;
+    --secondary-color: #FE9800;
+    --standard-green: #005247;
+    --white-dim: rgba(255, 255, 255, 0.80);
+    --white-color: #fff;
+    --link-blue: #087096;
+    --dark-blue: #1B1464;
+    --purple-color: #6438BC;
+    --primary-transparent: #25262710;
+    --italic-font: 'Libre Baskerville', serif;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+body em {
+    font-family: var(--italic-font);
+}
+
+.topbar {
+    padding: 48px 0;
+}
+
+.topbar .topbarContent {
+    padding-left: 65px;
+}
+
+.topbar .topbarContent .phoneNumber img {
+    width: 18px;
+    height: auto;
+    vertical-align: text-top;
+}
+
+.topbar .topbarContent .phoneNumber span a {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    display: inline-block;
+    padding-left: 5px;
+    text-decoration: none;
+}
+
+.topbar .topbarContent .profesinalLink img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    display: inline-block;
+    margin-left: 40px;
+    transition: .15s linear;
+}
+
+.banner {
+    background: var(--standard-green);
+}
+
+.banner .imgContainer {
+    background: var(--secondary-color);
+    padding: 0 !important;
+    position: relative;
+}
+
+.banner .imgContainer img.profileImg {
+    width: 100%;
+    height: 463px;
+    position: relative;
+    bottom: -110px;
+    background: var(--secondary-color);
+    object-fit: cover;
+    object-position: top;
+}
+
+.banner .imgContainer .socialIcon {
+    background: var(--secondary-color);
+    width: 100%;
+    padding: 50px 0;
+    position: absolute;
+    top: -122px;
+}
+
+.banner .imgContainer .socialIcon img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    display: block;
+    margin: 0 15px;
+    transition: .15s linear;
+}
+
+.banner .imgContainer .socialIcon img:hover,
+.topbar .topbarContent .profesinalLink img:hover {
+    transform: scale(1.2);
+}
+
+
+
+.banner .bannerContent {
+    padding: 87px 0 83px 40px;
+}
+
+.banner .bannerContent h2 {
+    font-size: 55px;
+    font-weight: 200;
+    color: var(--white-color);
+    margin-bottom: 24px;
+}
+
+.banner .bannerContent h2 strong {
+    font-weight: 600;
+}
+
+.banner .bannerContent p {
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 47px;
+    color: var(--white-dim);
+    max-width: 700px;
+}
+
+
+.hero {
+    background-image: linear-gradient(to right, var(--standard-green) 50%, transparent 0)
+}
+
+.hero .heroContent {
+    padding: 43px 0 43px 60px;
+    background-color: var(--white-color);
+}
+
+.hero .heroContent p,
+.hero .heroContent p a {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400px;
+    color: var(--primary-color);
+}
+
+.hero .heroContent p a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+
+
+
+.workHeader {
+    padding: 60px 0;
+    background-color: var(--primary-transparent);
+}
+
+.workHeader img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.workHeader h4 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 10px;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.workHeader a {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: .15s linear;
+}
+
+.workHeader a:hover {
+    transform: scale(1.1);
+}
+.workSection .borderTop {
+    border-top: 1px solid rgba(37, 38, 39, 0.12);
+}
+.workSection .workContainer {
+    padding: 60px 0;
+}
+
+.workSection .workContainer .workDetails .rightBorder {
+    position: absolute;
+    background-color: rgba(37, 38, 39, 0.12);
+    width: 1px;
+    height: 84px;
+    right: 0;
+    top: 30px;
+}
+
+.workSection .workContainer .workDetails h3 {
+    color: var(--primary-color);
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.workSection .workContainer .workDetails h3 span {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.workSection .workContainer .workDetails p {
+    color: var(--primary-color);
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    max-width: 890px;
+}
+
+.workSection .workContainer .workDetails h4 {
+    color: var(--primary-color);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    padding-top: 50px;
+}
+
+.workSection .workContainer .workDetails .link {
+    color: var(--link-blue);
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 600;
+    display: block !important;
+    float: right;
+    padding-top: 65px !important;
+}
+
+.workSection .workContainer .work {
+    padding-top: 30px;
+}
+
+.workSection .workContainer .work .imgContaner {
+    width: 100%;
+    height: 375px;
+    border-radius: 24px;
+    border: 1px solid rgba(37, 38, 39, 0.12);
+}
+
+.workSection .workContainer .work .imgContaner img {
+    width: 100%;
+    height: 324px;
+    object-fit: cover;
+    border-radius: 24px 24px 0 0;
+}
+
+.workSection .workContainer .work .imgContaner a {
+    display: block;
+    padding: 16px 30px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    color: var(--link-blue);
+    text-decoration: none;
+    transition: .15s linear;
+    border-radius: 0 0 24px 24px;
+    background-color: rgba(250, 250, 250, 1);
+    border: 1px solid rgba(37, 38, 39, 0.12);
+}
+
+.workSection .workContainer .work .imgContaner a:hover {
+    transform: scale(1.1)
+}
+
+/* App section design */
+.workSection .workContainer .work ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 47px;
+}
+
+.workSection .workContainer .work ul li {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color: var(--primary-color);
+    position: relative;
+}
+
+.workSection .workContainer .work ul li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.workSection .workContainer .work ul li:before {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    left: -47px;
+    top: 50%;
+    transform: translateY(-60%);
+}
+
+
+/* Star Agency Css */
+
+.workSection .workContainer .agency.work ul li:before {
+    content: url(./icons/lightBlueTic.svg);
+}
+
+.workSection .workContainer .earn.work ul li:before {
+    content: url(./icons/purpleTic.svg);
+}
+
+.workSection .workContainer .pypepro.work ul li:before {
+    content: url(./icons/blueTic.svg);
+}
+
+.workSection .workContainer .agency.work .features {
+    background-color: var(--dark-blue);
+    border-radius: 24px;
+}
+
+.workSection .workContainer .agency.work .features .featureHeader {
+    padding: 20px 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.workSection .workContainer .agency.work .features .featureHeader img {
+    width: 40px;
+    height: 40px;
+}
+
+.workSection .workContainer .agency.work .features .featureHeader .content {
+    padding-left: 15px;
+}
+
+.workSection .workContainer .agency.work .features .featureHeader .content h4 {
+    font-size: 14px;
+    line-height: 12px;
+    letter-spacing: .15px;
+    color: var(--white-color);
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.workSection .workContainer .agency.work .features .featureHeader .content p {
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--white-dim);
+    font-weight: 400;
+}
+
+.workSection .workContainer .agency.work .features .featureContent {
+    padding: 34px 24px 24px;
+}
+
+.workSection .workContainer .agency.work .features .featureContent .featureList:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.workSection .workContainer .agency.work .features .featureContent .featureList p:nth-child(1) {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: .1px;
+    color: var(--white-color);
+    font-weight: 500;
+    margin: 0;
+}
+
+.workSection .workContainer .agency.work .features .featureContent .featureList p:nth-child(2) {
+    font-size: 14px;
+    line-height: 13px;
+    color: var(--white-dim);
+    font-weight: 400;
+    margin: 0;
+}
+
+.workSection .workContainer .agency.work .features .featureContent .featureList p:nth-child(2) span {
+    color: var(--link-blue);
+    font-weight: 700;
+}
+
+/* End Agency Css */
+
+/* Start App Css */
+
+/* End App Css */
+/* Start Skitto */
+.workSection .workContainer .skitto.agency.work ul li:before {
+    content: url(./icons/purpleTic.svg);
+}
+.workSection .workContainer .skitto.agency.work .features {
+    background-color: var(--purple-color);
+}
+.workSection .workContainer .skitto.agency.work .features .featureContent .featureList p:nth-child(2) span {
+    color: #FFF300;
+}
+.workSection .workContainer .skitto.agency.work .imgContainer {
+    padding: 0;
+}
+.workSection .workContainer .skitto.agency.work .imgContainer {
+    background-color: #EFF2F5;
+    max-height: 1120px;
+    overflow: hidden;
+
+}
+.workSection .workContainer .skitto.agency.work .imgContainer img{
+    filter: drop-shadow(0px 0px 128px rgba(128, 128, 128, 0.2));
+ }
+/* End Skitto */
+/* start Bd tickets css */
+.workSection .workContainer .bd.work {
+    padding: 0;
+}
+.workSection .workContainer .bd.skitto.agency.work .imgContainer {
+    max-height: 1880px;
+}
+/* end Bd tickets css */
+/* Start Earn Css */
+
+.workSection .workContainer .earn.work .earnFeatures {
+    background-color: var(--purple-color);
+    padding: 37px 20px;
+    border-radius: 24px;
+}
+
+.workSection .workContainer .earn.work .earnFeatures .rightBorder,.workSection .workContainer .pypepro.work .pypproFeatures .rightBorder {
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.workSection .workContainer .earn.work .earnFeatures h3 {
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 88px;
+    color: var(--white-color);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.workSection .workContainer .earn.work .earnFeatures p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--white-dim);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.workSection .workContainer .earn.work .earnFeatures img {
+    width: 160px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+/* End earn Css */
+
+/* Start pypproCss */
+.workSection .workContainer .pypepro.work h3 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 24px;
+}
+
+.workSection .workContainer .pypepro.work .pypproFeatures {
+    background-color: var(--link-blue);
+    padding: 50px 20px;
+    border-radius: 24px;
+}
+.workSection .workContainer .pypepro.work .pypproFeatures h4{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--white-color)
+}
+.workSection .workContainer .pypepro.work .pypproFeatures p{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--white-dim)
+}
+
+/* End Pyprpo Css */
+
+.workSection .workContainer .agency.work .imgContainer {
+    background-color: var(--dark-blue);
+    margin-top: 60px;
+}
+
+.workSection .workContainer .earn.work .imgContainer {
+    background-color: var(--purple-color);
+    margin-top: 60px;
+}
+
+.workSection .workContainer .pypepro.work .imgContainer {
+    background-color: var(--dark-blue);
+    margin-top: 60px;
+}
+
+.workSection .workContainer .work .imgContainer {
+    padding: 30px;
+}
+
+.workSection .workContainer .work .imgContainer .imgs img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 2px;
+
+}
+
+.workSection .workContainer .work .imgContainer .imgs img:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+    .topbar .topbarContent {
+        padding-left: 0;
+        padding: 0 20px;
+    }
+
+    .banner .imgContainer img.profileImg {
+        width: 100%;
+        height: 463px;
+        position: relative;
+        bottom: 0;
+    }
+
+    .banner .imgContainer .socialIcon {
+        padding: 50px 0;
+        position: static;
+    }
+
+    .banner .bannerContent {
+        padding: 60px 20px;
+    }
+
+    .hero .heroContent {
+        padding: 35px 20px;
+        display: block !important;
+        text-align: center;
+    }
+
+    .hero .heroContent p {
+        margin: 10px 0;
+    }
+
+    .workSection .workHeader,
+    .workSection .workContainer {
+        padding: 40px 20px;
+    }
+
+    .workSection .workContainer .workDetails h4 {
+        padding-top: 20px;
+    }
+
+    .workSection .workContainer .work {
+        padding-top: 40px;
+    }
+
+    /* font family */
+    .banner .bannerContent h2 {
+        font-size: 48px;
+    }
+
+    .banner .bannerContent p {
+        font-size: 28px;
+        line-height: 42px;
+    }
+
+    .workSection .workHeader h4 {
+        font-size: 32px;
+    }
+
+    .workSection .workContainer .workDetails .link {
+        float: none;
+        padding-top: 20px !important;
+    }
+    .workSection .workContainer .skitto.agency.work .imgContainer {
+        max-height: 1600px;
+    }
+}
