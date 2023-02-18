@@ -190,9 +190,11 @@ body em {
 .workHeader a:hover {
     transform: scale(1.1);
 }
+
 .workSection .borderTop {
     border-top: 1px solid rgba(37, 38, 39, 0.12);
 }
+
 .workSection .workContainer {
     padding: 60px 0;
 }
@@ -236,14 +238,30 @@ body em {
     padding-top: 50px;
 }
 
-.workSection .workContainer .workDetails .link {
+.workSection .workContainer .workDetails .link,
+.workHeader a {
     color: var(--link-blue);
     font-size: 14px;
     line-height: 17px;
     font-weight: 600;
     display: block !important;
     float: right;
-    padding-top: 65px !important;
+    margin-top: 65px !important;
+    padding: 12px 24px;
+    border-radius: 4px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: .15s linear;
+}
+
+.workSection .workContainer .workDetails .link.disable {
+    background-color: rgba(37, 38, 39, .4);
+    color: var(--white-color);
+    cursor: not-allowed;
+}
+
+.workSection .workContainer .workDetails .link:hover {
+    transform: scale(1.05);
 }
 
 .workSection .workContainer .work {
@@ -277,9 +295,16 @@ body em {
     background-color: rgba(250, 250, 250, 1);
     border: 1px solid rgba(37, 38, 39, 0.12);
 }
+.workSection .workContainer .work .imgContaner a.disable {
+    color:rgba(37, 38, 39, .4);
+    cursor:not-allowed;
+}
 
 .workSection .workContainer .work .imgContaner a:hover {
     color: #000;
+}
+.workSection .workContainer .work .imgContaner a.disable:hover {
+    color:rgba(37, 38, 39, .4);
 }
 
 /* App section design */
@@ -401,32 +426,40 @@ body em {
 .workSection .workContainer .skitto.agency.work ul li:before {
     content: url(./icons/purpleTic.svg);
 }
+
 .workSection .workContainer .skitto.agency.work .features {
     background-color: var(--purple-color);
 }
+
 .workSection .workContainer .skitto.agency.work .features .featureContent .featureList p:nth-child(2) span {
     color: #FFF300;
 }
+
 .workSection .workContainer .skitto.agency.work .imgContainer {
     padding: 0;
 }
+
 .workSection .workContainer .skitto.agency.work .imgContainer {
     background-color: #EFF2F5;
     max-height: 1120px;
     overflow: hidden;
 
 }
-.workSection .workContainer .skitto.agency.work .imgContainer img{
+
+.workSection .workContainer .skitto.agency.work .imgContainer img {
     filter: drop-shadow(0px 0px 128px rgba(128, 128, 128, 0.2));
- }
+}
+
 /* End Skitto */
 /* start Bd tickets css */
 .workSection .workContainer .bd.work {
     padding: 0;
 }
+
 .workSection .workContainer .bd.skitto.agency.work .imgContainer {
     max-height: 1880px;
 }
+
 /* end Bd tickets css */
 /* Start Earn Css */
 
@@ -436,7 +469,8 @@ body em {
     border-radius: 24px;
 }
 
-.workSection .workContainer .earn.work .earnFeatures .rightBorder,.workSection .workContainer .pypepro.work .pypproFeatures .rightBorder {
+.workSection .workContainer .earn.work .earnFeatures .rightBorder,
+.workSection .workContainer .pypepro.work .pypproFeatures .rightBorder {
     border-right: 1px solid rgba(255, 255, 255, 0.12);
 }
 
@@ -482,14 +516,16 @@ body em {
     padding: 50px 20px;
     border-radius: 24px;
 }
-.workSection .workContainer .pypepro.work .pypproFeatures h4{
+
+.workSection .workContainer .pypepro.work .pypproFeatures h4 {
     font-size: 14px;
     line-height: 24px;
     font-weight: 600;
     text-align: center;
     color: var(--white-color)
 }
-.workSection .workContainer .pypepro.work .pypproFeatures p{
+
+.workSection .workContainer .pypepro.work .pypproFeatures p {
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
@@ -593,6 +629,7 @@ body em {
         float: none;
         padding-top: 20px !important;
     }
+
     .workSection .workContainer .skitto.agency.work .imgContainer {
         max-height: 1600px;
     }
