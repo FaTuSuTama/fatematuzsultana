@@ -256,7 +256,7 @@ body em {
 
 .workSection .workContainer .workDetails .link.disable {
     background-color: rgba(37, 38, 39, .4);
-    color: var(--white-color);
+    color: #fff
     cursor: not-allowed;
 }
 
